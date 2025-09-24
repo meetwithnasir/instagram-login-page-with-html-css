@@ -41,7 +41,6 @@ div {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 button {
@@ -51,14 +50,11 @@ button {
     border-radius: 8px;
     border: none;
     margin-top: 8px;
-    
-
 }
 
 button a{
     color: white;
     text-decoration: none;
-    
 }
 
 .card {
@@ -83,8 +79,6 @@ button a{
     display: flex;
     flex-direction: row;
     gap: 10px;
-    /* padding: 10px 0; */
-
 }
 
 .loginwithfb {
@@ -92,8 +86,6 @@ button a{
 }
 .fb_login div a {
     text-decoration: none;
-    
-
 }
 
 .fb_login img {
@@ -131,8 +123,4 @@ form button {
 }
 .loginform input:focus{
     border-color: #a8a8a8;
-}
-
-li::marker {
-    color: red;
 }
