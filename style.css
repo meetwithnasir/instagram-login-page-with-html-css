@@ -1,0 +1,138 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: 100vh;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+input {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px 0;
+    border: 1px solid rgb(203, 202, 202);
+}
+
+input::placeholder {
+    color: gray;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+input:focus{
+    border: 1px solid black;
+    outline: none;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button {
+    width: 100%;
+    background-color: #808dfb ;
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 8px;
+    
+
+}
+
+button a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.card {
+    border: 1px solid rgb(196, 195, 195);
+    width: 100%;
+    height: 100%;
+    max-width: 320px;
+    padding: 40px 40px 0 40px;
+    gap: 10px;
+}
+
+.secondnd_card { border:  1px solid rgb(196, 195, 195);
+    width: 100%;
+    max-width: 320px;
+}
+
+.titel img {
+    width: 200px;
+}
+
+.fb_login div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* padding: 10px 0; */
+
+}
+
+.loginwithfb {
+    padding-top: 15px;
+}
+.fb_login div a {
+    text-decoration: none;
+    
+
+}
+
+.fb_login img {
+    width: 100%;
+    max-width: 20px;
+}
+
+.forgotpass {
+    padding: 15px 0 20px 0;
+}
+.forgotpass a {
+    color: black;
+}
+.forgotpass a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.secondnd_card {
+    padding: 15px 0;
+}
+
+.sign_up {
+    display: flex;
+    flex-direction: row;
+    gap: 5px
+}
+
+.sign_up a {
+    text-decoration: none;
+}
+
+form button {
+    cursor: default;
+}
+.loginform input:focus{
+    border-color: #a8a8a8;
+}
+
+li::marker {
+    color: red;
+}
