@@ -33,12 +33,15 @@ input {
 input::placeholder {
     color: gray;
     font-size: 12px;
-    padding-left: 10px;
+    /* padding-left: 10px; */
 }
 
 input:focus{
     border: 1px solid #111;
     outline: none;
+}
+.loginform input:focus{
+    border-color: #a8a8a8;
 }
 div {
     display: flex;
@@ -80,10 +83,6 @@ div, button, img,input {
     width: 200px;
 }
 
-.loginform input:focus{
-    border-color: #a8a8a8;
-    padding-left: 5px;
-}
 
 .login-with-fb div {
     display: flex;
@@ -119,6 +118,10 @@ div, button, img,input {
     flex-direction: row;
     gap: 5px;
     border-radius: 5px;
+}
+
+.signup_section p {
+    color: #111;
 }
 
 form button {
@@ -158,6 +161,7 @@ form button {
     flex-direction: row;
     gap: 5px;
     border-radius: 5px;
+
 }
 
 }
