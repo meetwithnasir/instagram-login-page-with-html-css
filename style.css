@@ -1,3 +1,4 @@
+/***************** basic reset *****************/
 *,
 *::after,
 *::before {
@@ -6,17 +7,10 @@
     box-sizing: border-box;
 }
 
+
+/***************** some default styling  *****************/
 body {
     color: #fff;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    min-height: 80vh;
-    margin: 30px 10px 10px 10px;
 }
 
 img {
@@ -25,15 +19,15 @@ img {
 }
 input {
     margin-bottom: 5px;
-    padding: 10px 0;
+    padding: 10px;
     border: 1px solid rgb(203, 202, 202);
     border-radius: 5px;
+    background-color: #f3f1f1;
 }
 
 input::placeholder {
     color: gray;
     font-size: 12px;
-    /* padding-left: 10px; */
 }
 
 input:focus{
@@ -63,14 +57,20 @@ a{
     text-decoration: none;
 }
 
-button a{
-    color: #fff;
-}
-
 div, button, img,input {
     width: 100%;
 }
 
+
+/************ main styling start here ************/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: 80vh;
+    margin: 30px 10px 10px 10px;
+}
 
 .card {
     border: 1px solid rgb(196, 195, 195);
@@ -79,36 +79,31 @@ div, button, img,input {
     border-radius: 5px;
 }
 
-.titel img {
-    width: 200px;
+
+/************ social media login setion ************/
+.fb_login {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
 }
 
-
-.login-with-fb div {
-    display: flex;
-    flex-direction: row;
-    gap: 6px;
-}
-
-.loginwithfb {
-    padding-top: 15px;
-}
-
-.loginwithfb img {
-    max-width: 17px;
+.fb_login img {
+    width: 20px;
+    height: 20px;
 }
 
 .forgotpass {
     padding-bottom:20px;
+    color: #111;
 }
 
-.forgotpass a {
-    color: black;
-}
-
-.forgotpass a:hover {
+.forgotpass:hover {
     text-decoration: underline;
 }
+
+
+/************ sign up section ************/
 
 .signup_section { 
     border:  1px solid rgb(196, 195, 195);
@@ -120,14 +115,18 @@ div, button, img,input {
     border-radius: 5px;
 }
 
-.signup_section p {
+.signup span {
     color: #111;
 }
 
 form button {
     cursor: default;
+    color: #fff;
 }
 
+
+
+/********** media query ***********/
 @media (max-width: 335px){
     .card {
         border: 1px solid rgb(196, 195, 195);
@@ -140,28 +139,22 @@ form button {
     body {
     background-color: #fff;
     font-size: 12px;
- }
-    .login-with-fb div {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-}
+    }
 
     input::placeholder {
     color: gray;
     font-size:8px;
-    padding-left: 10px;
-}
+    }
+
+    .fb_login img {
+    width: 15px;
+    height: 15px;
+    }
 
     .signup_section { 
     border:  1px solid rgb(196, 195, 195);
     width: 230px;
-    padding: 15px 0;
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    border-radius: 5px;
 
-}
+    }
 
 }
