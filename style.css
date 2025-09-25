@@ -88,9 +88,11 @@ div, button, img,input {
     margin-top: 10px;
 }
 
-.fb_login img {
-    width: 20px;
-    height: 20px;
+.fb-logo {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .forgotpass {
